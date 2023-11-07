@@ -4,11 +4,13 @@ import kotlinx.coroutines.flow.Flow
 import com.example.note_app.domain.model.Note
 
 interface NoteRepository {
-    fun getNote():Flow<List<Note>>
+    fun getNotes():Flow<List<Note>>
 
-    suspend fun add(note:Note)
+    suspend fun addNote(note:Note)
 
-    suspend fun update(note:Note)
+    suspend fun updateNote(note:Note)
 
-    suspend fun delete(note:Note)
+    suspend fun deleteNote(note:Note)
+    suspend fun getNote(id: Int):Note?
+
 }

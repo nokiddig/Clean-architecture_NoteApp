@@ -6,6 +6,6 @@ import com.example.note_app.domain.repository.NoteRepository
 class AddNote (
     val noteRepository: NoteRepository
 ){
-    suspend operator fun invoke(note: Note) = noteRepository.add(note)
+    suspend operator fun invoke(note: Note) = noteRepository.addNote(note)
 
 }

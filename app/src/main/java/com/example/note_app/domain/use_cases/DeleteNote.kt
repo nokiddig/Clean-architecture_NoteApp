@@ -6,6 +6,6 @@ import com.example.note_app.domain.repository.NoteRepository
 class DeleteNote (
     private val noteRepository: NoteRepository
 ){
-    suspend operator fun invoke(note: Note) = noteRepository.delete(note)
+    suspend operator fun invoke(note: Note) = noteRepository.deleteNote(note)
 
 }

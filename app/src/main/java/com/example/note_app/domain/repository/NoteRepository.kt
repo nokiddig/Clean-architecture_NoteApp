@@ -6,7 +6,7 @@ import com.example.note_app.domain.model.Note
 interface NoteRepository {
     fun getNote():Flow<List<Note>>
 
-    suspend fun addNote(note:Note)
+    suspend fun add(note:Note)
 
     suspend fun update(note:Note)
 

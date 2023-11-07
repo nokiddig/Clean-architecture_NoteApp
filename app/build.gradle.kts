@@ -66,4 +66,7 @@ dependencies {
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
+    implementation ("androidx.room:room-runtime:2.2.4")
+    implementation ("androidx.room:room-compiler:2.2.4")
+    implementation ("androidx.room:room-ktx:2.2.5")
 }

@@ -1,11 +1,16 @@
+import org.jetbrains.kotlin.kapt3.base.Kapt.kapt
+
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    //add
+    kotlin("kapt")
+    id("com.google.dagger.hilt.android")
 }
 
 android {
     namespace = "com.example.note_app"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.note_app"
@@ -70,4 +75,11 @@ dependencies {
     implementation ("androidx.room:room-runtime:2.2.4")
     implementation ("androidx.room:room-compiler:2.2.4")
     implementation ("androidx.room:room-ktx:2.2.5")
+    implementation ("com.google.guava:guava:27.0.1-android")
+    implementation("com.google.dagger:hilt-android:2.44")
+    kapt("com.google.dagger:hilt-android-compiler:2.44")
+}
+
+kapt {
+    correctErrorTypes = true
 }

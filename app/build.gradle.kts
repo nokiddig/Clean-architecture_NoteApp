@@ -80,7 +80,8 @@ dependencies {
     implementation ("androidx.navigation:navigation-compose:2.5.3")
     implementation("androidx.hilt:hilt-navigation-compose:1.0.0")
     kapt("com.google.dagger:hilt-android-compiler:2.44")
-//    implementation("com.google.dagger:hilt-android-compiler:2.44")
+    implementation ("androidx.compose.ui:ui-tooling:1.0.2")
+    implementation ("com.github.doctor-blue:compose-navigation:1.1.0")
 }
 
 kapt {
